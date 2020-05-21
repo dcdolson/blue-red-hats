@@ -9,8 +9,6 @@ HatColour operator^(HatColour a, HatColour b)
     return (a == b)? HatColour::red: HatColour::blue;
 }
 
-using HatVec = std::vector<HatColour>;
-
 std::ostream& operator<<(std::ostream& s, HatColour c)
 {
     switch(c)

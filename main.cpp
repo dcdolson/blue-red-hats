@@ -8,6 +8,8 @@
 uint8_t const NUM_HATS = 100;
 unsigned const experiments_per_thread = 100000;
 
+using HatVec = std::vector<HatColour>;
+
 HatVec assign_hats(uint32_t seed)
 {
     std::mt19937 gen(seed);
